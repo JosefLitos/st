@@ -7,8 +7,8 @@
  */
 static char *font = "mono:pixelsize=19:antialias=true:autohint=true";
 static char *font2[] = {
-   "Font Awesome 5 Free Solid:pixelsize=17:antialias=true:autohint=true",
    "Inconsolata Nerd Font:pixelsize=17:antialias=true:autohint=false",
+   "Font Awesome 5 Free Solid:pixelsize=17:antialias=true:autohint=true",
    "JoyPixels:pixelsize=17:antialias=true:autohint=true",
 };
 static int borderpx = 0;

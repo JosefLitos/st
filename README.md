@@ -12,7 +12,7 @@ literally the best terminal emulator ever:
 -   **scrollback** with `ctrl-shift-minus/equal` or `ctrl-shift-pageup/down` or scroll with the
     mouse
 -   **change alpha** with `alt-minus/equal`
--   **zoom/change font size** with `ctrl-minus/equal` or `ctrl-shift-btn4/5`
+-   **zoom/change font size** with `ctrl-minus/equal` or `ctrl-shift-btn4/5`, `ctrl-0` to reset
 -   **copy text** with `alt-c`, **paste** is `alt-v`
 
 ## Pretty stuff

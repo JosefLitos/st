@@ -233,6 +233,7 @@ static Shortcut shortcuts[] = {
    { XK_ANY_MOD,   XK_Break,      sendbreak,    {.i =  0} },
    { ControlMask,  XK_equal,      zoom,         {.f = +1} },
    { ControlMask,  XK_minus,      zoom,         {.f = -1} },
+   { ControlMask,  XK_0,          zoomreset,    {.f =  0} },
    { TERMMOD,      XK_equal,      kscrollup,    {.i =  1} },
    { TERMMOD,      XK_minus,      kscrolldown,  {.i =  1} },
    { TERMMOD,      XK_Page_Up,    kscrollup,    {.i = -1} },

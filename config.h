@@ -117,13 +117,13 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	"#101010", "#c82a15", "#559915", "#d8af15", "#1a6ab8", "#9d2088", "#45ac87", "#868380",
-	"#4a4846", "#f03522", "#85f022", "#f0e522", "#2798f0", "#d032c5", "#75f0aa", "#f0ece0",
+	"#4a4846", "#f03522", "#85f022", "#f0e522", "#2798f0", "#d032c5", "#75f0aa", "#f0eeea",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#86e000", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
 	"#101010", /* 258 -> bg */
-	"#f0ece0", /* 259 -> fg */
+	"#f0eeea", /* 259 -> fg */
 };
 
 /*
@@ -234,8 +234,8 @@ static Shortcut shortcuts[] = {
    { ControlMask,  XK_equal,      zoom,         {.f = +1} },
    { ControlMask,  XK_minus,      zoom,         {.f = -1} },
    { ControlMask,  XK_0,          zoomreset,    {.f =  0} },
-   { TERMMOD,      XK_equal,      kscrollup,    {.i =  1} },
-   { TERMMOD,      XK_minus,      kscrolldown,  {.i =  1} },
+   { TERMMOD,      XK_plus,      kscrollup,    {.i =  1} },
+   { TERMMOD,      XK_underscore,      kscrolldown,  {.i =  1} },
    { TERMMOD,      XK_Page_Up,    kscrollup,    {.i = -1} },
    { TERMMOD,      XK_Page_Down,  kscrolldown,  {.i = -1} },
    { MODKEY,       XK_equal,      changealpha,  {.f = +0.1} },

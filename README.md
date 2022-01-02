@@ -1,4 +1,7 @@
-# Fork of Luke’s build of st - the simple (suckless) terminal
+# st - the simple (suckless) terminal
+
+- 2.1.2022 fresh build, all patches updated to latest → underlines are buggy
+- originally forked from Luke, but now freshly rebuilt
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it
 literally the best terminal emulator ever:
@@ -17,16 +20,14 @@ literally the best terminal emulator ever:
 
 ## Pretty stuff
 
--   Compatibility with `Xresources` and `pywal` for dynamic colors.
 -   Transparency/alpha, which is also adjustable from your `Xresources`.
--   Default font is system “mono” at 19pt, meaning the font will match your system font.
+-   Default font is “mono” at 19pt, meaning the font will match your system font.
 
 ## Other st patches
 
--   Vertcenter
 -   Scrollback
 -   font2
--   updated to version 0.8.2, not updating ever again!!
+-   updated to version 0.8.4, latest commit in 2.1.2022, not updating ever again!!
 
 ## Installation for newbs
 
@@ -41,20 +42,6 @@ required as well. Chances are, you have all of this installed already.
 On OpenBSD, be sure to edit `config.mk` first and remove `-lrt` from the `$LIBS` before compiling.
 
 Be sure to have a composite manager (`xcompmgr`, `picom`, etc.) running if you want transparency.
-
-## How to configure dynamically with Xresources
-
-For many key variables, this build of `st` will look for X settings set in either `~/.Xdefaults` or
-`~/.Xresources`. You must run `xrdb` on one of these files to load the settings.
-
-For example, you can define your desired fonts, transparency or colors:
-
-    *.font:	Liberation Mono:pixelsize=12:antialias=true:autohint=true;
-    *.alpha: 0.9
-    *.color0: #111
-    ...
-
-The `alpha` value (for transparency) goes from `0` (transparent) to `1` (opaque).
 
 ### Colors
 

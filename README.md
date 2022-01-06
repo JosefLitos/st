@@ -16,7 +16,7 @@ literally the best terminal emulator ever:
     mouse
 -   **change alpha** with `alt-minus/equal`
 -   **zoom/change font size** with `ctrl-minus/equal` or `ctrl-shift-btn4/5`, `ctrl-0` to reset
--   **copy text** with `alt-c`, **paste** is `alt-v`
+-   **copy text** with `ctrl+alt-c`, **paste** is `ctrl+alt-v`
 
 ## Pretty stuff
 

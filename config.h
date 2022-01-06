@@ -213,8 +213,8 @@ static Shortcut shortcuts[] = {
    { TERMMOD,      XK_Page_Down,   kscrolldown,  {.i = -1} },
    { MODKEY,       XK_equal,       changealpha,  {.f = +0.1} },
    { MODKEY,       XK_minus,       changealpha,  {.f = -0.1} },
-   { MODKEY,       XK_c,           clipcopy,     {.i =  0} },
-   { MODKEY,       XK_v,           clippaste,    {.i =  0} },
+   { ControlMask|ShiftMask, XK_c,  clipcopy,     {.i =  0} },
+   { ControlMask|ShiftMask, XK_v,  clippaste,    {.i =  0} },
 };
 
 /*

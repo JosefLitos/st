@@ -177,7 +177,7 @@ static uint forcemousemod = ShiftMask;
 
 static char *openurlcmd[] = { "/bin/sh", "-c", "st-urlhandler", "externalpipe", NULL };
 
-#define MODKEY Mod1Mask
+#define MODKEY (ControlMask|Mod1Mask)
 #define TERMMOD (ControlMask|ShiftMask)
 
 /*
@@ -211,10 +211,10 @@ static Shortcut shortcuts[] = {
    { TERMMOD,      XK_underscore,  kscrolldown,  {.i =  1} },
    { TERMMOD,      XK_Page_Up,     kscrollup,    {.i = -1} },
    { TERMMOD,      XK_Page_Down,   kscrolldown,  {.i = -1} },
-   { MODKEY,       XK_equal,       changealpha,  {.f = +0.1} },
-   { MODKEY,       XK_minus,       changealpha,  {.f = -0.1} },
-   { ControlMask|ShiftMask, XK_c,  clipcopy,     {.i =  0} },
-   { ControlMask|ShiftMask, XK_v,  clippaste,    {.i =  0} },
+   { Mod1Mask,     XK_equal,       changealpha,  {.f = +0.1} },
+   { Mod1Mask,     XK_minus,       changealpha,  {.f = -0.1} },
+   { MODKEY,       XK_c,           clipcopy,     {.i =  0} },
+   { MODKEY,       XK_v,           clippaste,    {.i =  0} },
 };
 
 /*

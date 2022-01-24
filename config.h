@@ -118,9 +118,9 @@ float alpha = 0.7;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#101010", "#cc2815", "#54a015", "#cfa815", "#3a6dad", "#ad30a8", "#32a08d", "#969390",
-	"#5a5856", "#f03522", "#85f022", "#f0e822", "#43a3e0", "#e7909a", "#80f0c8", "#f0eeea",
-
+	"#101010", "#cc2815", "#54a015", "#cfa815", "#326dcd", "#ad30a8", "#32a08d", "#969390",
+	"#5a5856", "#f03522", "#85f022", "#f0e822", "#43a3e0", "#e7909a", "#99a015", "#f0eeea",
+	//cyan original: "#32a08d", "#80f0c8"
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
@@ -215,6 +215,7 @@ static Shortcut shortcuts[] = {
    { Mod1Mask,     XK_minus,       changealpha,  {.f = -0.1} },
    { MODKEY,       XK_c,           clipcopy,     {.i =  0} },
    { MODKEY,       XK_v,           clippaste,    {.i =  0} },
+	 { MODKEY,       XK_o,           externalpipe, {.v = openurlcmd } },
 };
 
 /*
@@ -244,8 +245,6 @@ static Shortcut shortcuts[] = {
  */
 static KeySym mappedkeys[] = {
 	XK_space,
-	XK_m,
-	XK_i,
 	XK_A,
 	XK_B,
 	XK_C,
@@ -271,7 +270,6 @@ static KeySym mappedkeys[] = {
 	XK_W,
 	XK_X,
 	XK_Y,
-	XK_Z,
 	XK_Z,
 	XK_0,
 	XK_1,
@@ -508,7 +506,6 @@ static Key key[] = {
 	{ XK_W,           ControlMask|ShiftMask, "\033[87;6u",  0,  0},
 	{ XK_X,           ControlMask|ShiftMask, "\033[88;6u",  0,  0},
 	{ XK_Y,           ControlMask|ShiftMask, "\033[89;6u",  0,  0},
-	{ XK_Z,           ControlMask|ShiftMask, "\033[90;6u",  0,  0},
 	{ XK_Z,           ControlMask|ShiftMask, "\033[90;6u",  0,  0},
 	{ XK_0,           ControlMask,           "\033[48;5u",  0,  0},
 	{ XK_0,           ControlMask|Mod1Mask,  "\033[48;7u",  0,  0},

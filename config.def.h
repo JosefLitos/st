@@ -282,7 +282,6 @@ static KeySym mappedkeys[] = {
 	XK_X,
 	XK_Y,
 	XK_Z,
-	XK_Z,
 	XK_0,
 	XK_1,
 	XK_2,

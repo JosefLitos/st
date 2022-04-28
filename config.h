@@ -126,8 +126,8 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#86e000", /* 256 -> cursor */
 	"#505050", /* 257 -> rev cursor*/
-	"#f0eeea", /* 259 -> fg */
-	"#101010", /* 258 -> bg */
+	"#f0eeea", /* 258 -> fg */
+	"#101010", /* 259 -> bg */
 };
 
 
@@ -196,7 +196,7 @@ static MouseShortcut mshortcuts[] = {
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
-	{ XK_ANY_MOD,           Button2, clippaste,       {.i = 0},      1 },
+	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 },
   { ControlMask,          Button1, externalpipe,   {.v = openurlcmd } },
 };
 

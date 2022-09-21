@@ -47,7 +47,6 @@ install: st
 	cp -f st $(DESTDIR)$(PREFIX)/bin
 	cp -f st-urlhandler $(DESTDIR)$(PREFIX)/bin
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/st
-	chmod 755 $(DESTDIR)$(PREFIX)/bin/st-light
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/st-urlhandler
 	mkdir -p $(DESTDIR)$(MANPREFIX)/man1
 	sed "s/VERSION/$(VERSION)/g" < st.1 > $(DESTDIR)$(MANPREFIX)/man1/st.1
@@ -62,6 +61,7 @@ light-prep:
 linstall: light-prep st
 	mv conf.h config.h
 	cp -f st $(DESTDIR)$(PREFIX)/bin/st-light
+	chmod 755 $(DESTDIR)$(PREFIX)/bin/st-light
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st

@@ -56,7 +56,7 @@ install: st
 
 light-prep: 
 	cp -p config.h conf.h
-	sed -i 's/f0eeea/101010/;121s/101010/f0eeea/;130s/101010/fafaff/;117s/0\.7/1/' config.h
+	sed -i 's/f0eeea/101010/;121s/101010/f0eeea/;130s/101010/ffffff/;117s/0\.7/1/' config.h
 
 linstall: light-prep st
 	mv conf.h config.h
